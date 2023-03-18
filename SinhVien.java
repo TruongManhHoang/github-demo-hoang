@@ -1,5 +1,6 @@
 
 import java.text.Format;
+import java.util.Scanner;
 
 public class SinhVien {
     private String hoTen;
@@ -38,6 +39,16 @@ public class SinhVien {
 
     public void setDiemTB(float diemTB) {
         this.diemTB = diemTB;
+    }
+
+    public void nhapThongTin() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Nhap ho ten: ");
+        this.hoTen = scanner.nextLine();
+        System.out.print("Nhap nam sinh: ");
+        this.namSinh = scanner.nextInt();
+        System.out.print("Nhap diem trung binh: ");
+        this.diemTB = scanner.nextFloat();
     }
 
     public void hienThiThongTin() {
